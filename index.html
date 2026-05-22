@@ -6,18 +6,23 @@
 
 <title>Leal Romance</title>
 
+<!-- Tipografia -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!-- ICONOS -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
+<!-- CSS -->
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="responsive.css">
 
 <style>
+/* HERO */
+/* Logo grande al inicio */
 
 .hero{
   width:100%;
@@ -32,6 +37,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   padding:40px;
 }
 
+/* IMAGEN PRINCIPAL */
 .hero img{
   width:65%;
   max-width:700px;
@@ -39,6 +45,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 }
 
 
+/* TEXTO PRINCIPAL */
 .info{
   width:100%;
   padding:80px 10%;
@@ -51,6 +58,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   color:#111;
 }
 
+/* SECCION PROMOCION */
 .promocion{
   width:100%;
 
@@ -61,6 +69,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   min-height:700px;
 }
 
+/* TEXTO */
 .promocion-texto{
   width:100%;
 
@@ -72,6 +81,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   z-index:1;
 }
 
+/* TITULO GRANDE */
 .promocion-texto h1{
   font-size:5.5rem;
   font-weight:400;
@@ -80,14 +90,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
   margin-bottom:30px;
 
+  /* HACE QUE EL TEXTO NO PASE DE LA IMAGEN */
   max-width:65%;
 }
 
 
+/* PARRAFOS */
 .promocion-texto p{
   max-width:60%;
 }
 
+/* TEXTO EN NEGRITAS */
 .promo-bold{
   margin-top:35px;
 
@@ -100,6 +113,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   max-width:60%;
 }
 
+/* IMAGEN DERECHA */
 .promocion-img{
   position:absolute;
 
@@ -114,6 +128,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   z-index:2;
 }
 
+/* CUADRO VERDE DETRAS */
 .bg-cuadro{
   position:absolute;
 
@@ -128,6 +143,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   z-index:0;
 }
 
+/* IMAGEN */
 .promocion-img img{
   position:absolute;
 
@@ -139,6 +155,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   z-index:2;
 }
 
+/* SECCION MOCHILAS */
+
 .mochilas{
   width:100%;
 
@@ -149,6 +167,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   padding:100px 8%;
 }
 
+/* MOCHILA IZQUIERDA ARRIBA */
 .mochila-left{
   position:absolute;
 
@@ -159,6 +178,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   height:520px;
 }
 
+/* CHICA DERECHA ABAJO */
 .mochila-right{
   position:absolute;
 
@@ -169,6 +189,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   height:540px;
 }
 
+/* CUADROS VERDES */
 .mochila-left .bg,
 .mochila-right .bg{
   position:absolute;
@@ -181,6 +202,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   z-index:0;
 }
 
+/* POSICION CUADROS */
 .mochila-left .bg{
   left:-20px;
   top:30px;
@@ -191,6 +213,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   bottom:30px;
 }
 
+/* IMAGENES */
 .mochila-left img,
 .mochila-right img{
   position:absolute;
@@ -203,6 +226,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   z-index:2;
 }
 
+/* TEXTO CENTRADO */
 .mochila-texto{
   position:absolute;
 
@@ -216,17 +240,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   max-width:650px;
 }
 
+/* TITULO */
 .mochila-texto h2{
   font-size:5rem;
   margin-bottom:25px;
 }
 
+/* TEXTO */
 .mochila-texto p{
   font-size:2.4rem;
   line-height:1.5;
 }
 
 
+/* TARJETAS */
 .cards{
   width:100%;
 
@@ -239,6 +266,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   padding:120px 5%;
 }
 
+/* TARJETA */
 .card{
   width:320px;
 
@@ -253,6 +281,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   background:transparent;
 }
 
+/* IMAGEN TARJETA */
 .card img{
   width:100%;
   height:220px;
@@ -262,6 +291,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   border-radius:10px;
 }
 
+/* TITULO */
 .card h3{
   font-size:2.2rem;
 
@@ -270,6 +300,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   color:#5b7c99;
 }
 
+/* TEXTO */
 .card p{
   margin-top:15px;
 
@@ -279,6 +310,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 }
 
 
+/* BOTON EXPLORAR */
 .boton-container{
   width:100%;
 
@@ -288,6 +320,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   padding-bottom:120px;
 }
 
+/* BOTON */
 .explorar-btn{
   background:#0d6f73;
 
@@ -304,17 +337,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   transition:.3s;
 }
 
+/* HOVER */
 .explorar-btn:hover{
   transform:scale(1.05);
 }
 
 
+/* RESPONSIVE */
 @media(max-width:768px){
 body{
     overflow-x:hidden;
 }
 
 
+/* HERO */
 .hero{
     min-height:auto;
 
@@ -329,6 +365,7 @@ body{
     align-items:center;
 }
 
+/* LOGO */
 .hero img{
     width:min(88vw, 360px);
 
@@ -343,6 +380,7 @@ body{
     margin:auto;
 }
 
+/* INFO */
 .info{
     width:min(92%,430px);
 
@@ -353,11 +391,15 @@ body{
     text-align:center;
 }
 
+/* TEXTO */
 .info p{
     font-size:clamp(1.1rem,4vw,1.4rem);
 
     line-height:1.4;
 }
+
+
+/* PROMOCION */
 
 .promocion{
     width:min(92%,430px);
@@ -371,6 +413,7 @@ body{
     position:relative;
 }
 
+/* TITULO */
 .promocion-texto h1{
     max-width:100%;
 
@@ -432,6 +475,7 @@ body{
     z-index:1;
 }
 
+/* CUADRO */
 .bg-cuadro{
     width:190px;
     height:190px;
@@ -440,10 +484,13 @@ body{
     bottom:30px;
 }
 
+/* IMAGEN */
 .promocion-img img{
     object-fit:contain;
 }
 
+
+/* MOCHILAS */
 
 .mochilas{
     width:min(92%,430px);
@@ -462,6 +509,7 @@ body{
     align-items:flex-start;
 }
 
+/* IZQUIERDA */
 .mochila-left{
     position:relative;
 
@@ -476,6 +524,7 @@ body{
     margin-top:-10px;
 }
 
+/* DERECHA */
 .mochila-right{
     position:relative;
 
@@ -490,12 +539,14 @@ body{
     margin-top:40px;
 }
 
+/* CUADROS */
 .mochila-left .bg,
 .mochila-right .bg{
     width:120px;
     height:160px;
 }
 
+/* TEXTO */
 .mochila-texto{
     position:relative;
 
@@ -513,6 +564,7 @@ body{
     transform:none;
 }
 
+/* TITULO */
 .mochila-texto h2{
     font-size:clamp(2.7rem,10vw,4rem);
 
@@ -521,12 +573,14 @@ body{
     margin-bottom:16px;
 }
 
+/* TEXTO */
 .mochila-texto p{
     font-size:clamp(1.1rem,4vw,1.4rem);
 
     line-height:1.4;
 }
 
+/* TARJETAS */
 .cards{
     width:min(92%,430px);
     margin:auto;
@@ -537,6 +591,7 @@ body{
     gap:18px;
 }
 
+/* TARJETA */
 .card{
     width:100%;
     max-width:360px;
@@ -544,6 +599,7 @@ body{
     border-radius:16px;
 }
 
+/* IMAGEN */
 .card img{
     width:100%;
 
@@ -557,12 +613,14 @@ body{
 
 }
 
+/* TITULO */
 .card h3{
     font-size:2rem;
 
     margin-top:10px;
 }
 
+/* TEXTO */
 .card p{
     font-size:0.95rem;
 
@@ -571,6 +629,8 @@ body{
     margin-top:8px;
 }
 
+
+/* BOTON */
 
 .boton-container{
     padding-bottom:60px;
@@ -586,34 +646,59 @@ body{
 
 }
 
+
 </style>
 </head>
 
 <body>
+	
+<!-- navbar -->
 <nav class="navbar">
+
+    <!-- CONTACTO -->
     <div class="nav-links" id="navLeft">
         <a href="contacto.html">Contacto</a>
     </div>
+
 <div class="nav-links" id="navMenu">
+
     <a href="menu.html">Menu</a>
+
+    <!-- SOLO MOBILE -->
     <a href="contacto.html" class="mobile-contact">
         Contacto
     </a>
+
 </div>
+
+    <!-- LOGO -->
     <a href="index.html" class="logo">
         <img src="pics/logo.png" alt="Logo">
     </a>
+
+
+    <!-- HAMBURGUESA -->
     <div class="menu-toggle" id="menuToggle">
+
         <span></span>
         <span></span>
         <span></span>
+
     </div>
+
 </nav>
 	
+<!-- contenido -->
+
+<!-- HERO -->
+
 <section class="hero">
+
   <img src="pics/LogoCafetería.png" alt="Logo Café">
+
 </section>
 
+<!-- TEXTO -->
 
 <section class="info">
 
@@ -628,6 +713,8 @@ Inspirados en la tradición familiar y el sazón de mamá Imelda.
 </section>
 
 
+<!-- PROMOCION -->
+
 <section class="promocion">
 
 <div class="promocion-texto">
@@ -641,6 +728,7 @@ Junta 8 sellos y llévate gratis algún alimento o bebida gratis.<br>
 Y si es tu cumpleaños llévate 30% de descuento.
 </p>
 
+<!-- TEXTO EXTRA -->
 <div class="promo-bold">
 ¡Síguenos en redes sociales para enterarte de más descuentos y promociones!
 </div>
@@ -655,9 +743,11 @@ Y si es tu cumpleaños llévate 30% de descuento.
 
 </section>
 
+<!-- MOCHILAS -->
 
 <section class="mochilas">
 
+<!-- IZQUIERDA -->
 <div class="mochila-left">
 
 <div class="bg"></div>
@@ -666,6 +756,7 @@ Y si es tu cumpleaños llévate 30% de descuento.
 
 </div>
 
+<!-- TEXTO CENTRO -->
 <div class="mochila-texto">
 
 <h2>¡Ya no pierdas <br>tu mochila!</h2>
@@ -677,6 +768,7 @@ Por 10 pesos puedes<br>guardar tus cosas.
 
 </div>
 
+<!-- DERECHA -->
 <div class="mochila-right">
 
 <div class="bg"></div>
@@ -687,6 +779,7 @@ Por 10 pesos puedes<br>guardar tus cosas.
 
 </section>
 
+<!-- TARJETAS -->
 
 <section class="cards">
 
@@ -729,27 +822,44 @@ Jamón, queso, manzana, arándanos, nueces y ajonjoli (trae como base lechuga it
 
 </section>
 
+<!-- BOTON -->
+
 <div class="boton-container">
+
 <a href="menu.html" class="explorar-btn">
 Explorar
 </a>
-</div>	
+
+</div>
+
+<!-- termina contenido -->	
 	
+	
+<!-- footer -->
 <footer>
 
     <div class="footer-container">
+
+        <!-- IZQUIERDA -->
         <div class="footer-left">
+
             <h3 class="footer-title">
                 Leal Romance
             </h3>
+
             <p class="footer-text">
                 De los Árboles, Hab Los Reyes Ixtacala Barrio de los Árboles
                 / Barrio de los Héroes,
                 54090 Tlalnepantla, Méx.
             </p>
+
         </div>
+
+        <!-- CENTRO -->
         <div class="footer-center">
+
             <div class="footer-logo">
+
                 <a href="index.html">
                     <img src="pics/logo.png" alt="Logo Footer">
                 </a>
@@ -771,13 +881,16 @@ Explorar
                 </a>
 
             </div>
+
         </div>
 
+        <!-- DERECHA -->
         <div class="footer-right">
 
             <h3 class="footer-title">
                 Contacto
             </h3>
+
             <p class="footer-text" style="margin-bottom:15px;">
           Lunes a viernes: 8:00 a 7:30 pm | Sabado de 9:00 am a 1:00 pm</p>
 
@@ -805,12 +918,14 @@ Explorar
 
     </div>
 
+    <!-- COPYRIGHT -->
     <p class="copyright">
         © 2026 Leal Romance · Todos los derechos reservados
     </p>
 
 </footer>
 
+<!-- SCRIPT MENU -->
 <script>
 
 const menuToggle = document.getElementById("menuToggle");
