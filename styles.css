@@ -1,0 +1,186 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+  background:linear-gradient(to bottom,#f0f4fa,#d9faff);
+    font-family:'Plus Jakarta Sans', sans-serif;
+    color:#000;
+}
+
+.navbar{
+    background:#F8F9FF;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:28px 70px;
+
+    border-bottom:3px solid #4f7d96;
+
+    position:relative;
+    z-index:1000;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#1E293B;
+
+    font-size:2.7rem;
+
+    position:relative;
+}
+
+.nav-links a::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:-8px;
+
+    width:0%;
+    height:3px;
+
+    background:#334155;
+
+    transition:0.4s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo img{
+    height:85px;
+    width:auto;
+    object-fit:contain;
+}
+
+.menu-toggle{
+    display:none;
+
+    flex-direction:column;
+    gap:7px;
+
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    width:45px;
+    height:6px;
+
+    border-radius:20px;
+
+    background:#6b54cc;
+}
+
+footer{
+    background:linear-gradient(to right, #bffff5, #6adbff);
+
+    padding:40px 60px 15px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    gap:40px;
+}
+
+.footer-left{
+    width:33%;
+}
+
+.footer-center{
+    width:33%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.footer-right{
+    width:33%;
+}
+
+.footer-title{
+    font-size:2rem;
+
+    margin-bottom:12px;
+}
+
+.footer-text{
+    font-size:1.1rem;
+    line-height:1.6;
+}
+
+.footer-logo img{
+    width:260px;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.footer-contact-row{
+    display:flex;
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:12px;
+}
+
+.footer-contact-row i{
+    color:#6A4C93;
+    font-size:1.4rem;
+
+    width:25px;
+}
+
+.footer-socials{
+    display:flex;
+    gap:18px;
+
+    margin-top:10px;
+}
+
+.footer-socials a{
+    color:#6A4C93;
+    font-size:2rem;
+
+    transition:0.3s;
+}
+
+.footer-socials a:hover{
+    transform:scale(1.15);
+}
+
+.copyright{
+    text-align:center;
+
+    margin-top:25px;
+}
