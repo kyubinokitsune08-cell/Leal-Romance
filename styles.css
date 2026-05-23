@@ -23,6 +23,8 @@ body{
 
     position:relative;
     z-index:1000;
+
+    overflow:visible;
 }
 
 .nav-links{
