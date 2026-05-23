@@ -27,14 +27,6 @@ NAVBAR MOBILE
 #navLeft{
     display:none;
 }
-
-    #navMenu{
-    order:2;
-}
-
-#navLeft{
-    order:1;
-}
     
 /* logo */
 .logo{
