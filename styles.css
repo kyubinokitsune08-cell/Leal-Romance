@@ -1,4 +1,4 @@
-{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -161,6 +161,19 @@ footer{
     width:25px;
 }
 
+.footer-contact-row a{
+
+color:inherit;
+
+text-decoration:none;
+
+transition:.2s;
+
+}
+
+.footer-contact-row a:hover{
+color:#0d6f73;
+}
 .footer-socials{
     display:flex;
     gap:18px;
