@@ -27,7 +27,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     box-sizing:border-box;
 }
 
-
+img{
+    display:block;
+} 
 .hero{
   width:100%;
   min-height:100vh;
@@ -52,15 +54,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 .promocion,
 .mochilas,
 .cards{
-
     width:min(100%,1400px);
-
     margin-inline:auto;
-
-    overflow:hidden;
-
 }
-
 
 .info{
   width:100%;
@@ -195,41 +191,41 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     position:relative;
 
-    min-height:clamp(600px,55vw,800px);
+    min-height:clamp(650px,60vw,850px);
 
     padding:clamp(60px,8vw,120px);
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow-x: clip;
+    overflow-y: visible;
+
 }
 
 
+.mochila-left,
+.mochila-right{
+    position:absolute;
+
+    height:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 .mochila-left{
-
-position:absolute;
-
-top:-20px;
-
-left:3%;
-
-width:clamp(260px,30vw,420px);
-
-aspect-ratio:420/520;
-
-
+    top:-20px;
+    left:3%;
+    width:clamp(260px,30vw,420px);
+    aspect-ratio:420/520;
 }
 
 .mochila-right{
-
-position:absolute;
-
-right:3%;
-
-bottom:-20px;
-
-width:clamp(220px,25vw,330px);
-
-aspect-ratio:330/430;
-
-
+    right:3%;
+    bottom:-20px;
+    width:clamp(220px,25vw,330px);
+    aspect-ratio:330/430;
 }
 
 
@@ -263,16 +259,15 @@ z-index:0;
 
 .mochila-left img,
 .mochila-right img{
-  position:absolute;
+    position:relative;
 
-inset:0;
+    width:100%;
 
-  width:100%;
-  height:100%;
+    height:auto;
 
-  object-fit:contain;
+    object-fit:contain;
 
-  z-index:2;
+    z-index:2;
 }
 
 
@@ -284,16 +279,22 @@ inset:0;
 
   transform:translate(-50%,-50%);
 
-  width:min(600px,60%);
+    width:46%;
+    max-width:520px;
 
   text-align:center;
 
   z-index:5;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 
 .mochila-texto h2{
   font-size:clamp(3rem,5vw,5rem);
+   line-height:1.05;
 
   margin-bottom:25px;
 }
@@ -303,6 +304,10 @@ inset:0;
   font-size:clamp(1.3rem,2vw,2.4rem);
 
   line-height:1.5;
+
+max-width:420px;
+
+margin-inline:auto;
 }
 
 
@@ -436,6 +441,7 @@ flex:1 1 280px;
 
 .mochila-texto{
 
+width:48%;
     max-width:500px;
 
 }
@@ -604,9 +610,11 @@ body{
     display:flex;
     flex-wrap:wrap;
 
-    justify-content:space-between;
+        justify-content:center;
 
     align-items:flex-start;
+
+   gap:10px;
 }
 
 .mochila-left{
@@ -638,7 +646,7 @@ body{
 
     transform:rotate(7deg);
 
-    margin-top:40px;
+    margin-top:25px;
 }
 
 
