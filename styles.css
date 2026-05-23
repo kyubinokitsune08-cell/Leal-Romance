@@ -31,6 +31,14 @@ body{
     align-items:center;
 }
 
+#navMenu{
+    order:1;
+}
+
+#navLeft{
+    order:2;
+}
+
 .nav-links a{
     text-decoration:none;
     color:#1E293B;
