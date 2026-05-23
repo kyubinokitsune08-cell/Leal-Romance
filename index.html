@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -279,7 +279,8 @@ z-index:0;
 
   transform:translate(-50%,-50%);
 
-  width:min(46%, 520px);
+    width:46%;
+    max-width:520px;
 
   text-align:center;
 
@@ -290,15 +291,6 @@ z-index:0;
   align-items:center;
 }
 
-.mochila-texto p{
-  font-size:clamp(1.3rem,2vw,2.4rem);
-
-  line-height:1.5;
-
-  max-width:420px;
-
-  margin-inline:auto;
-}
 
 .mochila-texto h2{
   font-size:clamp(3rem,5vw,5rem);
@@ -307,6 +299,16 @@ z-index:0;
   margin-bottom:25px;
 }
 
+
+.mochila-texto p{
+  font-size:clamp(1.3rem,2vw,2.4rem);
+
+  line-height:1.5;
+
+max-width:420px;
+
+margin-inline:auto;
+}
 
 
 
@@ -477,39 +479,11 @@ width:48%;
 
 }
 
-@media(min-width:769px){
-
-    .navbar{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-    }
-
-
-    #navMenu{
-        order:1;
-    }
-
-
-    .logo{
-        order:2;
-    }
-
-    #navLeft{
-        order:3;
-    }
-
-    .mobile-contact{
-        display:none;
-    }
-}
-
-
 @media(max-width:768px){
 body{
     overflow-x:hidden;
 }
-
+	
 .hero{
     min-height:auto;
 
@@ -807,35 +781,31 @@ body{
 </head>
 
 <body>
-	
-
 <nav class="navbar">
-<div class="nav-links" id="navLeft">
-    <a href="menu.html">Menú</a>
-</div>
+    <div class="nav-links" id="navLeft">
+        <a href="contacto.html">Contacto</a>
+    </div>
 
 <div class="nav-links" id="navMenu">
 
-    <a href="contacto.html">Contacto</a>
+    <a href="menu.html">Menu</a>
 
-    <a href="menu.html" class="mobile-contact">
-        Menú
+
+    <a href="contacto.html" class="mobile-contact">
+        Contacto
     </a>
+
 </div>
 
 
     <a href="index.html" class="logo">
         <img src="pics/logo.png" alt="Logo">
     </a>
-
-
     <div class="menu-toggle" id="menuToggle">
-
         <span></span>
         <span></span>
         <span></span>
     </div>
-
 </nav>
 	
 
@@ -1092,4 +1062,3 @@ menuToggle.addEventListener("click", () => {
 </script>
 
 </body>
-</html>
