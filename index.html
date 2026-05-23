@@ -27,6 +27,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     box-sizing:border-box;
 }
 
+	.navbar{
+
+    position:relative;
+}
+
+.menu-toggle{
+
+    display:none;
+}
+	
 img{
     display:block;
 } 
@@ -480,21 +490,108 @@ width:48%;
 }
 
 @media(max-width:768px){
+
 body{
     overflow-x:hidden;
 }
 
-#navLeft a{
+#navLeft{
     display:none;
 }
 
+/* Ocultar menú inicialmente */
+#navMenu{
+
+    display:none !important;
+
+    position:absolute;
+
+    top:100%;
+
+    right:0;
+
+    width:220px;
+
+    background:#fff;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    z-index:999;
+}
+	
+/* Mostrar menú cuando tenga active */
+#navMenu.active{
+
+    display:flex !important;
+}
+
+/* Mostrar hamburguesa */
+.menu-toggle{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+    z-index:1000;
+}
+
+.menu-toggle span{
+    width:28px;
+
+    height:3px;
+
+    background:#111;
+
+    border-radius:5px;
+}
+
+/* Intercambiar orden */
 #navMenu a[href="contacto.html"]{
     order:2;
 }
 
 #navMenu .mobile-contact{
+    display:block;
     order:1;
 }
+
+
+	.menu-toggle{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+    position:relative;
+
+    z-index:1000;
+}
+
+.menu-toggle span{
+
+    width:28px;
+
+    height:3px;
+
+    background:#111;
+
+    border-radius:10px;
+}
+
+	
 	
 .hero{
     min-height:auto;
