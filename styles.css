@@ -32,10 +32,7 @@ body{
     gap:40px;
     align-items:center;
 }
-/* ocultar menu mobile en desktop */
-#navMenu{
-    display:none;
-}
+
 
 /* ocultar contacto mobile en desktop */
 .mobile-contact{
