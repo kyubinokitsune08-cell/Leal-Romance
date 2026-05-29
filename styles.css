@@ -33,12 +33,6 @@ body{
     align-items:center;
 }
 
-
-/* ocultar contacto mobile en desktop */
-.mobile-contact{
-    display:none;
-}
-
 #navMenu{
     order:1;
 }
@@ -212,4 +206,10 @@ color:#0d6f73;
     text-align:center;
 
     margin-top:25px;
+}
+
+
+/* ocultar contacto mobile en desktop */
+.mobile-contact{
+    display:none;
 }
