@@ -9,7 +9,9 @@ body{
     font-family:'Plus Jakarta Sans', sans-serif;
     color:#000;
 }
-
+.mobile-contact{
+    display:none;
+}
 .navbar{
     background:#F8F9FF;
 
