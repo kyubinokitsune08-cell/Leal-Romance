@@ -19,6 +19,14 @@ TABLET
     footer{
         padding:35px 30px 15px;
     }
+
+    .logo{
+    position:relative;
+
+    left:auto;
+
+    transform:none;
+}
 }
 
 
