@@ -19,300 +19,220 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <link rel="stylesheet" href="responsive.css">
 
 <style>
-	img{
-    max-width:100%;
-    height:auto;
-    display:block;
-}
-	
-  *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
-html,body{
-    max-width:100%;
-    overflow-x:hidden;
-}
+    .main-container{
+        width:90%;
+        margin:auto;
+
+        display:flex;
+        justify-content:space-between;
+
+        gap:50px;
+
+        padding-top:30px;
+        padding-bottom:40px;
+    }
 
 
+    .left-side{
+        width:38%;
+    }
 
-.contact-row span{
-    overflow-wrap:anywhere;
-}
+    .info-box{
+        border:5px solid #063d3d;
 
-	.left-side,
-.right-side{
-    overflow:hidden;
-}
-	
-/* =========================
-   CONTENEDOR PRINCIPAL
-========================= */
+        border-radius:18px;
 
-.main-container{
-    width:min(92%, 1400px);
+        padding:35px 30px;
 
-    margin-inline:auto;
+        margin-bottom:35px;
 
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
+        text-align:center;
+    }
 
-    gap:clamp(25px, 4vw, 60px);
+    .info-box h2{
+        font-size:3rem;
+        font-weight:800;
 
-    padding:clamp(30px, 4vw, 60px) 0;
-}
+        line-height:1.1;
 
-/* =========================
-   COLUMNAS
-========================= */
+        margin-bottom:18px;
+    }
 
-.left-side{
-    flex:1 1 380px;
+    .info-box p{
+        font-size:1.25rem;
+        line-height:1.4;
+    }
 
-    max-width:480px;
+    .bold{
+        font-weight:800;
+    }
 
-    min-width:0;
-}
+    .right-side{
+        width:58%;
+    }
 
-.right-side{
-    flex:1 1 600px;
+    .title{
+        font-family:'DM Serif Display', serif;
 
-    min-width:0;
-}
+        font-size:5rem;
 
-/* =========================
-   CAJAS
-========================= */
+        color:#1E293B;
 
-.info-box,
-.mobile-box{
-    border:5px solid #063d3d;
+        margin-bottom:10px;
+    }
 
-    border-radius:22px;
+    .description{
+        font-size:1.5rem;
+        line-height:1.4;
 
-    padding:clamp(22px, 3vw, 35px);
+        margin-bottom:28px;
+    }
 
-    margin-bottom:30px;
+    .contact-row{
+        display:flex;
+        align-items:center;
 
-    text-align:center;
+        gap:22px;
 
-    background:rgba(255,255,255,.35);
+        margin-bottom:28px;
+    }
 
-    backdrop-filter:blur(4px);
-}
+    .contact-icon{
+        width:62px;
+        height:62px;
 
-.mobile-box{
-    display:none;
-}
+        border-radius:50%;
 
-/* =========================
-   TEXTOS
-========================= */
+        background:#024F55;
 
-.info-box h2,
-.mobile-box h2{
-    font-size:clamp(2rem, 3.2vw, 3rem);
+        color:white;
 
-    line-height:1.1;
+        display:flex;
+        align-items:center;
+        justify-content:center;
 
-    margin-bottom:18px;
+        font-size:2rem;
+    }
 
-    font-weight:800;
-}
+    .contact-row span{
+        font-size:2rem;
+    }
 
-.info-box p,
-.mobile-box p{
-    font-size:clamp(1rem, 1.4vw, 1.25rem);
-
-    line-height:1.5;
-}
-
-.bold{
-    font-weight:800;
-}
-
-.title{
-    font-family:'DM Serif Display', serif;
-
-    font-size:clamp(3.2rem, 6vw, 5.5rem);
-
-    line-height:1;
-
-    color:#1E293B;
-
-    margin-bottom:15px;
-}
-
-.description{
-    font-size:clamp(1.05rem, 1.6vw, 1.5rem);
-
-    line-height:1.5;
-
-    margin-bottom:28px;
-}
-
-/* =========================
-   FILAS DE CONTACTO
-========================= */
-
-.contact-row{
-    display:flex;
-    align-items:center;
-
-    gap:18px;
-
-    margin-bottom:28px;
-
-    min-width:0;
- overflow:hidden;
-}
+  
+    .mobile-box{
+        display:none;
+    }
 
 .contact-row a{
     text-decoration:none;
     color:inherit;
 }
-
-.contact-row a:hover{
-    opacity:.8;
-    transition:.2s;
-}
-
-.contact-icon{
-    width:62px;
-    height:62px;
-
-    min-width:62px;
-
-    border-radius:50%;
-
-    background:#024F55;
-
-    color:white;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    font-size:2rem;
- flex-shrink:0;
-}
-
-.contact-row span{
-
-display:block;
-
-min-width:0;
-    font-size:clamp(1.1rem, 2vw, 2rem);
-
-    line-height:1.3;
-
-    word-break:break-word;
-}
-
-	h1,h2,h3,p,span,a{
-    max-width:100%;
-}
 	
-/* =========================
-   TABLET
-========================= */
-@media (max-width:1100px){
-
+    @media(max-width:768px){   
 .main-container{
-    gap:25px;
-}
-
-.left-side{
-    flex:1 1 300px;
-}
-
-.right-side{
-    flex:1 1 450px;
-}
-
-.title{
-    font-size:clamp(3rem, 5vw, 4.5rem);
-}
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-.main-container{
-    width:min(92%, 430px);
-
     flex-direction:column;
 
-    gap:22px;
+    width:min(92%, 430px);
+
+    margin:auto;
 
     padding-top:35px;
     padding-bottom:40px;
+
+    gap:22px;
 }
 
-/* ocultar cajas desktop */
 .left-side{
     display:none;
 }
 
-/* columna completa */
 .right-side{
     width:100%;
 }
 
-/* mostrar cajas mobile */
-.mobile-box{
-    display:block;
-}
 
 .title{
     text-align:center;
 
-    margin-bottom:20px;
+    font-size:clamp(3rem, 9vw, 4.3rem);
+
+    line-height:1;
+
+    margin-bottom:18px;
 }
 
+
+.mobile-box{
+    display:block;
+
+    border:4px solid #9a9ac0;
+
+    border-radius:18px;
+
+    padding:22px 18px;
+
+    text-align:center;
+
+    margin-bottom:24px;
+
+}
+
+.mobile-box h2{
+    font-size:clamp(2rem, 7vw, 2.7rem);
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:10px;
+}
+
+.mobile-box p{
+    font-size:clamp(1rem, 3.8vw, 1.2rem);
+
+    line-height:1.35;
+}
+
+
 .description{
+    font-size:clamp(1.1rem, 4vw, 1.35rem);
+
+    line-height:1.45;
+
     margin-bottom:22px;
 }
 
-/* contacto */
+
 .contact-row{
+    display:flex;
+
+    align-items:center;
+
     gap:14px;
 
     margin-bottom:22px;
 }
 
 .contact-icon{
-    width:46px;
-    height:46px;
+    width:44px;
+    height:44px;
 
-    min-width:46px;
+    min-width:44px;
+
+    border-radius:50%;
 
     font-size:1.2rem;
 }
 
 .contact-row span{
-    font-size:1rem;
+    font-size:clamp(1rem, 3.8vw, 1.2rem);
+
+    line-height:1.3;
+
+    word-break:break-word;
 }
-
-/* cajas */
-.mobile-box{
-    border-width:4px;
-
-    padding:22px 18px;
 }
-
-}
-
-/* =========================
-   CELULARES PEQUEÑOS
-========================= */
 
 @media(max-width:430px){
 
@@ -321,7 +241,7 @@ min-width:0;
 }
 
 .mobile-box{
-    padding:18px 15px;
+    padding:20px 16px;
 }
 
 .contact-row{
@@ -329,19 +249,15 @@ min-width:0;
 }
 
 .contact-icon{
-    width:42px;
-    height:42px;
+    width:40px;
+    height:40px;
 
-    min-width:42px;
+    min-width:40px;
 
-    font-size:1rem;
+    font-size:1.05rem;
+}
 }
 
-.contact-row span{
-    font-size:.95rem;
-}
-
-}
 </style>
 
 </head>
@@ -416,7 +332,7 @@ min-width:0;
     target="_blank"
     rel="noopener"
     class="contact-icon"
-    style="text-decoration:none; color:white;">
+    style="text-decoration:none;">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
     <a
@@ -475,7 +391,7 @@ min-width:0;
     href="mailto:Lealcarlos90@gmail.com?subject=Opinión,%20quejas%20y%20sugerencias&body=Hola,%20me%20gustaría%20compartir%20lo%20siguiente:"
     class="contact-icon"
     aria-label="Enviar correo"
-    style="text-decoration:none; color:white;">
+    style="text-decoration:none;">
 
         <i class="fa-solid fa-envelope"></i>
     </a>
