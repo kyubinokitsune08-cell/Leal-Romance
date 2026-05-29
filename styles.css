@@ -9,9 +9,7 @@ body{
     font-family:'Plus Jakarta Sans', sans-serif;
     color:#000;
 }
-.mobile-contact{
-    display:none;
-}
+
 .navbar{
     background:#F8F9FF;
 
@@ -33,6 +31,15 @@ body{
     display:flex;
     gap:40px;
     align-items:center;
+}
+/* ocultar menu mobile en desktop */
+#navMenu{
+    display:none;
+}
+
+/* ocultar contacto mobile en desktop */
+.mobile-contact{
+    display:none;
 }
 
 #navMenu{
