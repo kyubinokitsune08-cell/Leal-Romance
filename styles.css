@@ -46,6 +46,9 @@ img{
     position:relative;
 
     z-index:1000;
+
+    overflow:visible;
+
 }
 
 .nav-links{
@@ -98,6 +101,8 @@ img{
     display:flex;
     align-items:center;
     justify-content:center;
+    min-width:0;
+    
 }
 
 .logo img{
@@ -116,6 +121,10 @@ img{
     gap:7px;
 
     cursor:pointer;
+}
+
+.mobile-contact{
+    display:none;
 }
 
 .menu-toggle span{
@@ -152,7 +161,13 @@ footer{
 .footer-center,
 .footer-right{
     flex:1 1 280px;
+}
 
+.nav-links,
+.logo,
+.footer-left,
+.footer-center,
+.footer-right{
     min-width:0;
 }
 
@@ -254,4 +269,8 @@ h3,
 a,
 span{
     overflow-wrap:break-word;
+}
+
+*{
+    max-width:100%;
 }
