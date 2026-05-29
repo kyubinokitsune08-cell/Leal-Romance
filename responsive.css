@@ -36,6 +36,10 @@ MOBILE
 
 @media (max-width:768px){
 
+       .mobile-contact{
+        display:block;
+    }
+    
     .navbar{
         position:relative;
 
@@ -120,9 +124,6 @@ MOBILE
         font-weight:600;
     }
 
-    .mobile-contact{
-        display:block;
-    }
 
     /* FOOTER */
 
